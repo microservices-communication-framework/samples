@@ -1,0 +1,5 @@
+
+
+mca:
+  providers:
+    api-provider-url: http://localhost:5050/v3/api-docs
