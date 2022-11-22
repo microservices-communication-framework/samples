@@ -1,0 +1,9 @@
+server:
+  port: 5051
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-5ialgehcao8xqwmx.us.auth0.com/

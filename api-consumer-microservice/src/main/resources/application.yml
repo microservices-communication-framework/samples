@@ -2,4 +2,21 @@
 
 mca:
   providers:
-    api-provider-url: http://localhost:5050/v3/api-docs
+    simple-api-provider:
+      url: http://localhost:5050/v3/api-docs
+    secured-api-provider:
+      url: http://localhost:5051/v3/api-docs
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          secured-api-provider:
+            authorization-grant-type: client_credentials
+            client-id: --
+            client-secret: --
+            provider: secured-api-provider
+        provider:
+          secured-api-provider:
+            token-uri: --

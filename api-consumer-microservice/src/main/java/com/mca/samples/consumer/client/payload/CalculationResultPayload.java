@@ -1,4 +1,4 @@
-package com.mca.samples.consumer.client;
+package com.mca.samples.consumer.client.payload;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
